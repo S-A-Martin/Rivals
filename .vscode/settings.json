@@ -1,0 +1,48 @@
+{
+    "files.associations": {
+        "functional": "cpp"
+    },
+    "multiCommand.commands": [
+    {
+      "command": "multiCommand.callTestBat",
+      "sequence": [
+        { "command": "saveAll"
+        },
+        { "command": "workbench.action.terminal.sendSequence",
+          "args": { "text": "./test.bat\u000D" }
+        }
+      ]
+    },
+    {
+        "command": "multiCommand.callTestCleanBat",
+        "sequence": [
+          { "command": "saveAll"
+          },
+          { "command": "workbench.action.terminal.sendSequence",
+            "args": { "text": "./testclean.bat\u000D" }
+          }
+        ]
+      },
+    {
+      "command": "multiCommand.callRunBat",
+      "sequence": [
+        { "command": "saveAll"
+        },
+        { "command": "workbench.action.terminal.sendSequence",
+          "args": { "text": "./run.bat\u000D" }
+        }
+      ]
+    },
+    {
+        "command": "multiCommand.callRunCleanBat",
+        "sequence": [
+          { "command": "saveAll"
+          },
+          { "command": "workbench.action.terminal.sendSequence",
+            "args": { "text": "./runclean.bat\u000D" }
+          }
+        ]
+      }
+  ],
+  "workspaceKeybindings.buildRunTestsMultiCommand.enabled": true
+}

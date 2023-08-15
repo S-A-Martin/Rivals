@@ -1,0 +1,15 @@
+; Credit: https://stackoverflow.com/questions/12306223/how-to-manually-create-icns-files-using-iconutil
+; Create an 1024x1024 png (named "Logo1024.png") 
+mkdir Logo.iconset
+sips -z 16 16     Logo1024.png --out Logo.iconset/icon_16x16.png
+sips -z 32 32     Logo1024.png --out Logo.iconset/icon_16x16@2x.png
+sips -z 32 32     Logo1024.png --out Logo.iconset/icon_32x32.png
+sips -z 64 64     Logo1024.png --out Logo.iconset/icon_32x32@2x.png
+sips -z 128 128   Logo1024.png --out Logo.iconset/icon_128x128.png
+sips -z 256 256   Logo1024.png --out Logo.iconset/icon_128x128@2x.png
+sips -z 256 256   Logo1024.png --out Logo.iconset/icon_256x256.png
+sips -z 512 512   Logo1024.png --out Logo.iconset/icon_256x256@2x.png
+sips -z 512 512   Logo1024.png --out Logo.iconset/icon_512x512.png
+cp Logo1024.png Logo.iconset/icon_512x512@2x.png
+iconutil -c icns Logo.iconset
+rm -R Logo.iconset
