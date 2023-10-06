@@ -19,4 +19,3 @@ target_link_libraries(${BINARY} gtest gmock NovaSocket WS2_32)
 target_link_directories(${BINARY} PUBLIC
        ${PROJECT_SOURCE_DIR}/../NovaSockets/build/src
 )
-

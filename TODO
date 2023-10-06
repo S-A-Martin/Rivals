@@ -1,0 +1,7 @@
+[] Server: Add listening and client socket
+[] Server: Allow server to listen for a client
+[] Server: Allow a client to connect
+[] Client: Setup base code
+[] Client: Add a connection socket
+[] Client: Connect to the server
+[] Global: Design on sever/client messaging system
